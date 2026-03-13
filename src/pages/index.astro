@@ -1,11 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página cátalogo</title>
+    <title>Catálogo de Películas</title>
 </head>
 <body>
-    
+
+<header>
+    <img width="70px" src="https://i.pinimg.com/originals/4c/f0/97/4cf097a22a1002a4a5d4321e541512ca.png" alt=""><h1>Catálogo de películas para Ivo</h1>
+</header>
+
+<section class="catalogo">
+
+    <h2>Populares</h2>
+
+    <div class="peliculas">
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 1</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 2</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 3</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 4</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="catalogo">
+
+    <h2>Populares</h2>
+
+    <div class="peliculas">
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 1</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 2</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 3</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 4</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
+
+    </div>
+
+</section>
+
 </body>
+
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:#303030;
+    color:white;
+}
+
+header{
+    background-color:rgb(6, 0, 58);
+    padding:15px;
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    color:rgb(238, 202, 0);
+    font-weight: 900;
+}
+
+.catalogo{
+    padding: 10px 20px;
+}
+
+.peliculas{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.pelicula{
+    width:200px;
+    transition:transform 0.3s;
+}
+
+.pelicula img{
+    width:100%;
+    border-radius:5px;
+}
+
+.pelicula:hover{
+    transform:scale(1.1);
+}
+
+h2{
+    color:rgb(238, 202, 0);;
+}
+
+</style>
+
+<script>
+
+const url_api = "https://top-streaming.stream/32e12461-c13d-4866-bbc4-88fae36791db/manifest.json"
+
+</script>
 </html>

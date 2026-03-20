@@ -15,7 +15,6 @@
     <h2>Populares</h2>
 
     <div class="peliculas">
-
         <div class="pelicula">
             <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
             <p>Película 1</p>
@@ -40,7 +39,26 @@
             <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
             <p>Película 5</p>
         </div>
+       
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
 
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
+        
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
     </div>
 
 </section>
@@ -75,7 +93,26 @@
             <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
             <p>Película 5</p>
         </div>
+       
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
 
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
+
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
+        
+        <div class="pelicula">
+            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
+            <p>Película 5</p>
+        </div>
     </div>
 
 </section>
@@ -110,12 +147,18 @@ header h1{
 
 .peliculas{
     display:flex;
-    gap:20px;
-    flex-wrap:wrap;
+    gap: 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 12px;
+
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
 }
 
 .pelicula{
-    width:200px;
+    min-width:200px;
+    max-width: 200px;
     transition:transform 0.3s;
 }
 
@@ -132,11 +175,65 @@ h2{
     color:rgb(238, 202, 0);;
 }
 
+
+/* PARA HACER MÁS LINDAS LAS BARRAS DE SCROLL DE LAS CATEGORÍAS*/
+
+.peliculas:hover::-webkit-scrollbar,
+.peliculas:active::-webkit-scrollbar,
+.peliculas:focus::-webkit-scrollbar {
+    display:block;
+    height: 15px; 
+}
+.peliculas::-webkit-scrollbar {
+    background: transparent;
+    visibility: hidden;          
+}
+
+.peliculas::-webkit-scrollbar-track {
+    display: block;
+    background: transparent;    
+    border-radius: 5px;
+}
+
+.peliculas::-webkit-scrollbar-thumb {
+    background: #666;               
+    border-radius: 8px;
+    border: 3px solid #303030;  
+}
+
+.peliculas::-webkit-scrollbar-thumb:hover {
+    background: rgb(199, 199, 199);  
+}
+ 
+.peliculas.thin-scrollbar::-webkit-scrollbar-thumb {
+    background: #555;
+    border: 2px solid #303030;
+}
+
+.peliculas.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgb(199, 199, 199);
+}
+
+
+
 </style>
 
 <script>
 
-const url_api = "https://top-streaming.stream/32e12461-c13d-4866-bbc4-88fae36791db/manifest.json"
+// Me banearon la primera api del wifi de ort, toca cambiar.
+const api_url = `https://streaming-availability.p.rapidapi.com/shows/top?country=ar&service=netflix&show_type=movie&output_language=es`;
 
+const servicios = []
+
+fetch(api_url, {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': 'd8d2967e62msh5455a32dc5a1562p1e7984jsnf3e1b854372f',
+    'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
+  }
+})
+  .then(res => res.json())
+  .then(data => console.log(data))  // array con el top 10
+  .catch(err => console.error(err));
 </script>
 </html>

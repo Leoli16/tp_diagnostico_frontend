@@ -1,0 +1,92 @@
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:#303030;
+    color:white;
+}
+
+header{
+    background-color:rgb(6, 0, 58);
+    padding:15px;
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    color:rgb(238, 202, 0);
+    font-weight: 900;
+}
+
+.catalogo{
+    padding: 10px 20px;
+}
+
+.peliculas{
+    display:flex;
+    gap: 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 12px;
+
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+.pelicula{
+    min-width:200px;
+    max-width: 200px;
+    transition:transform 0.3s;
+}
+
+.pelicula img{
+    width:100%;
+    border-radius:5px;
+}
+
+.pelicula:hover{
+    transform:scale(1.1);
+}
+
+h2{
+    color:rgb(238, 202, 0);;
+}
+
+
+/* PARA HACER MÁS LINDAS LAS BARRAS DE SCROLL DE LAS CATEGORÍAS*/
+
+.peliculas:hover::-webkit-scrollbar,
+.peliculas:active::-webkit-scrollbar,
+.peliculas:focus::-webkit-scrollbar {
+    display:block;
+    height: 15px; 
+}
+.peliculas::-webkit-scrollbar {
+    background: transparent;
+    visibility: hidden;          
+}
+
+.peliculas::-webkit-scrollbar-track {
+    display: block;
+    background: transparent;    
+    border-radius: 5px;
+}
+
+.peliculas::-webkit-scrollbar-thumb {
+    background: #666;               
+    border-radius: 8px;
+    border: 3px solid #303030;  
+}
+
+.peliculas::-webkit-scrollbar-thumb:hover {
+    background: rgb(199, 199, 199);  
+}
+ 
+.peliculas.thin-scrollbar::-webkit-scrollbar-thumb {
+    background: #555;
+    border: 2px solid #303030;
+}
+
+.peliculas.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgb(199, 199, 199);
+}

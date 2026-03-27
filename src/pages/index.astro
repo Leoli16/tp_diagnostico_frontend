@@ -3,227 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Catálogo de Películas</title>
+    <link rel="stylesheet" href="/src/styles/styles.css">
 </head>
+
 <body>
 
 <header>
     <img width="70px" src="https://i.pinimg.com/originals/4c/f0/97/4cf097a22a1002a4a5d4321e541512ca.png" alt=""><h1>Catálogo de películas para Ivo</h1>
 </header>
 
-<section class="catalogo">
-
-    <h2>Populares</h2>
-
-    <div class="peliculas">
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 1</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 2</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 3</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 4</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-       
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-        
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-    </div>
-
+<section id="main">
 </section>
 
-<section class="catalogo">
-
-    <h2>Populares</h2>
-
-    <div class="peliculas">
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 1</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 2</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 3</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 4</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-       
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-        
-        <div class="pelicula">
-            <img src="https://image.tmdb.org/t/p/w500/nQhVtZLLAZAtlTmFETL2XO91Tcs.jpg">
-            <p>Película 5</p>
-        </div>
-    </div>
-
-</section>
 
 </body>
 
 
-<style>
 
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background-color:#303030;
-    color:white;
-}
-
-header{
-    background-color:rgb(6, 0, 58);
-    padding:15px;
-    display: flex;
-    align-items: center;
-}
-
-header h1{
-    color:rgb(238, 202, 0);
-    font-weight: 900;
-}
-
-.catalogo{
-    padding: 10px 20px;
-}
-
-.peliculas{
-    display:flex;
-    gap: 30px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding-bottom: 12px;
-
-    scroll-behavior: smooth;
-    scrollbar-gutter: stable;
-}
-
-.pelicula{
-    min-width:200px;
-    max-width: 200px;
-    transition:transform 0.3s;
-}
-
-.pelicula img{
-    width:100%;
-    border-radius:5px;
-}
-
-.pelicula:hover{
-    transform:scale(1.1);
-}
-
-h2{
-    color:rgb(238, 202, 0);;
-}
-
-
-/* PARA HACER MÁS LINDAS LAS BARRAS DE SCROLL DE LAS CATEGORÍAS*/
-
-.peliculas:hover::-webkit-scrollbar,
-.peliculas:active::-webkit-scrollbar,
-.peliculas:focus::-webkit-scrollbar {
-    display:block;
-    height: 15px; 
-}
-.peliculas::-webkit-scrollbar {
-    background: transparent;
-    visibility: hidden;          
-}
-
-.peliculas::-webkit-scrollbar-track {
-    display: block;
-    background: transparent;    
-    border-radius: 5px;
-}
-
-.peliculas::-webkit-scrollbar-thumb {
-    background: #666;               
-    border-radius: 8px;
-    border: 3px solid #303030;  
-}
-
-.peliculas::-webkit-scrollbar-thumb:hover {
-    background: rgb(199, 199, 199);  
-}
- 
-.peliculas.thin-scrollbar::-webkit-scrollbar-thumb {
-    background: #555;
-    border: 2px solid #303030;
-}
-
-.peliculas.thin-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: rgb(199, 199, 199);
-}
-
-
-
-</style>
 
 <script>
 
-// Me banearon la primera api del wifi de ort, toca cambiar.
-const api_url = `https://streaming-availability.p.rapidapi.com/shows/top?country=ar&service=netflix&show_type=movie&output_language=es`;
+function capitalize(texto){
+    return texto.charAt(0).toUpperCase() + texto.slice(1);
+}
 
-const servicios = []
+
+const services = ["netflix", "prime", "disney", "hbo", "apple", "paramount"]
+
+// Me banearon la primera api del wifi de ort, toca cambiar.
+const api_url = `https://streaming-availability.p.rapidapi.com/shows/top?show_type=movie&output_language=es&country=ar&service=`;
+
+const main = document.getElementById("main")
+
+
+
+for (let i of services){
+    let catalogo = document.createElement("section");
+    catalogo.classList.add("catalogo")
+    catalogo.innerHTML = `<h2>Populares en ${capitalize(i)}</h2>`
+
+    let peliculas = document.createElement("div")
+    peliculas.classList.add("peliculas")
+
+    let results = await fetch(`${api_url}${i}`, {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': 'd8d2967e62msh5455a32dc5a1562p1e7984jsnf3e1b854372f',
+        'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
+    }
+    })
+    results = await results.json();
+    for (let p of results){
+        peliculas.innerHTML = peliculas.innerHTML + `<div class="pelicula">
+                                                        <img src="${p.imageSet.verticalPoster.w720}">
+                                                        <p>${p.title}</p>
+                                                    </div>`
+    }
+    catalogo.appendChild(peliculas);
+    main.appendChild(catalogo)
+}
+
 
 fetch(api_url, {
   method: 'GET',
@@ -233,7 +72,7 @@ fetch(api_url, {
   }
 })
   .then(res => res.json())
-  .then(data => console.log(data))  // array con el top 10
+  .then(data => console.log(data))
   .catch(err => console.error(err));
 </script>
 </html>

@@ -1,3 +1,5 @@
+### Leonel Abud, 5°E TIC
+
 ## Explicación del proyecto:
 Es un catálogo sencillo de películas, pide las películas más populares de los principales servicios de streaming a una api.
 

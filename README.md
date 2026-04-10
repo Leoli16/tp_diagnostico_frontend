@@ -6,5 +6,5 @@ HTML, CSS, JS, ASTRO, API de rapidapi (https://streaming-availability.p.rapidapi
 
 ## Como usar:
 
-Se puede acceder mediante el deploy a Vercel.
+Se puede acceder mediante el deploy a Vercel. https://catalogo-peliculas-coral.vercel.app/
 Sino, clonar el repo, instalar las dependencias con "npm i", y ejecutar "npm run dev". Correrá en un server local, y aparecerá el puerto en la consola. (probablemente localhost:4321)
